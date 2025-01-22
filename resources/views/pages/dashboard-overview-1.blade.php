@@ -24,7 +24,7 @@
                             ])>
                                 <div class="box p-5">
                                     <div class="flex">
-                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="ShoppingCart" />
+                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="Users" />
                                         <div class="ml-auto">
                                             <x-base.tippy
                                                 class="flex cursor-pointer items-center rounded-full bg-success py-[3px] pl-2 pr-1 text-xs font-medium text-white"
@@ -34,8 +34,8 @@
                                             </x-base.tippy>
                                         </div>
                                     </div>
-                                    <div class="mt-6 text-3xl font-medium leading-8">4.710</div>
-                                    <div class="mt-1 text-base text-slate-500">Item Sales</div>
+                                    <div class="mt-6 text-3xl font-medium leading-8">{{ $users }}</div>
+                                    <div class="mt-1 text-base text-slate-500">All users count</div>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                             ])>
                                 <div class="box p-5">
                                     <div class="flex">
-                                        <x-base.lucide class="h-[28px] w-[28px] text-pending" icon="CreditCard" />
+                                        <x-base.lucide class="h-[28px] w-[28px] text-pending" icon="Store" />
                                         <div class="ml-auto">
                                             <x-base.tippy
                                                 class="flex cursor-pointer items-center rounded-full bg-danger py-[3px] pl-2 pr-1 text-xs font-medium text-white"
@@ -56,8 +56,8 @@
                                             </x-base.tippy>
                                         </div>
                                     </div>
-                                    <div class="mt-6 text-3xl font-medium leading-8">3.721</div>
-                                    <div class="mt-1 text-base text-slate-500">New Orders</div>
+                                    <div class="mt-6 text-3xl font-medium leading-8">{{ $sellers }}</div>
+                                    <div class="mt-1 text-base text-slate-500">seller count</div>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                             ])>
                                 <div class="box p-5">
                                     <div class="flex">
-                                        <x-base.lucide class="h-[28px] w-[28px] text-warning" icon="Monitor" />
+                                        <x-base.lucide class="h-[28px] w-[28px] text-warning" icon="ShoppingCart" />
                                         <div class="ml-auto">
                                             <x-base.tippy
                                                 class="flex cursor-pointer items-center rounded-full bg-success py-[3px] pl-2 pr-1 text-xs font-medium text-white"
@@ -78,9 +78,9 @@
                                             </x-base.tippy>
                                         </div>
                                     </div>
-                                    <div class="mt-6 text-3xl font-medium leading-8">2.149</div>
+                                    <div class="mt-6 text-3xl font-medium leading-8">{{ $buyers }}</div>
                                     <div class="mt-1 text-base text-slate-500">
-                                        Total Products
+                                        buyer count
                                     </div>
                                 </div>
                             </div>

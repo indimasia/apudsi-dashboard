@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\LayoutController;
+use App\Http\Controllers\GeneralController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,12 @@ use App\Http\Controllers\LayoutController;
 Route::get('theme-switcher/{activeTheme}', [ThemeController::class, 'switch'])->name('theme-switcher');
 Route::get('layout-switcher/{activeLayout}', [LayoutController::class, 'switch'])->name('layout-switcher');
 
-Route::controller(PageController::class)->group(function () {
+Route::controller(GeneralController::class)->group(function () {
     Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
+});
+
+Route::controller(PageController::class)->group(function () {
+    // Route::get('/', 'dashboardOverview1')->name('dashboard-overview-1');
     Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
     Route::get('dashboard-overview-3-page', 'dashboardOverview3')->name('dashboard-overview-3');
     Route::get('dashboard-overview-4-page', 'dashboardOverview4')->name('dashboard-overview-4');
