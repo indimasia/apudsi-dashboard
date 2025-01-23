@@ -25,14 +25,6 @@
                                 <div class="box p-5">
                                     <div class="flex">
                                         <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="Users" />
-                                        <div class="ml-auto">
-                                            <x-base.tippy
-                                                class="flex cursor-pointer items-center rounded-full bg-success py-[3px] pl-2 pr-1 text-xs font-medium text-white"
-                                                as="div" content="33% Higher than last month">
-                                                33%
-                                                <x-base.lucide class="ml-0.5 h-4 w-4" icon="ChevronUp" />
-                                            </x-base.tippy>
-                                        </div>
                                     </div>
                                     <div class="mt-6 text-3xl font-medium leading-8">{{ $users }}</div>
                                     <div class="mt-1 text-base text-slate-500">All users count</div>
@@ -46,15 +38,7 @@
                             ])>
                                 <div class="box p-5">
                                     <div class="flex">
-                                        <x-base.lucide class="h-[28px] w-[28px] text-pending" icon="Store" />
-                                        <div class="ml-auto">
-                                            <x-base.tippy
-                                                class="flex cursor-pointer items-center rounded-full bg-danger py-[3px] pl-2 pr-1 text-xs font-medium text-white"
-                                                as="div" content="2% Lower than last month">
-                                                2%
-                                                <x-base.lucide class="ml-0.5 h-4 w-4" icon="ChevronDown" />
-                                            </x-base.tippy>
-                                        </div>
+                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="Store" />
                                     </div>
                                     <div class="mt-6 text-3xl font-medium leading-8">{{ $sellers }}</div>
                                     <div class="mt-1 text-base text-slate-500">seller count</div>
@@ -68,15 +52,7 @@
                             ])>
                                 <div class="box p-5">
                                     <div class="flex">
-                                        <x-base.lucide class="h-[28px] w-[28px] text-warning" icon="ShoppingCart" />
-                                        <div class="ml-auto">
-                                            <x-base.tippy
-                                                class="flex cursor-pointer items-center rounded-full bg-success py-[3px] pl-2 pr-1 text-xs font-medium text-white"
-                                                as="div" content="12% Higher than last month">
-                                                12%
-                                                <x-base.lucide class="ml-0.5 h-4 w-4" icon="ChevronUp" />
-                                            </x-base.tippy>
-                                        </div>
+                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="ShoppingCart" />
                                     </div>
                                     <div class="mt-6 text-3xl font-medium leading-8">{{ $buyers }}</div>
                                     <div class="mt-1 text-base text-slate-500">
@@ -92,19 +68,41 @@
                             ])>
                                 <div class="box p-5">
                                     <div class="flex">
-                                        <x-base.lucide class="h-[28px] w-[28px] text-success" icon="User" />
-                                        <div class="ml-auto">
-                                            <x-base.tippy
-                                                class="flex cursor-pointer items-center rounded-full bg-success py-[3px] pl-2 pr-1 text-xs font-medium text-white"
-                                                as="div" content="22% Higher than last month">
-                                                22%
-                                                <x-base.lucide class="ml-0.5 h-4 w-4" icon="ChevronUp" />
-                                            </x-base.tippy>
-                                        </div>
+                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="Package" />
                                     </div>
-                                    <div class="mt-6 text-3xl font-medium leading-8">152.040</div>
+                                    <div class="mt-6 text-3xl font-medium leading-8">{{ $products }}</div>
+                                    <div class="mt-1 text-base text-slate-500">Total Product</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 grid grid-cols-12 gap-6">
+                        <div class="intro-y col-span-12 sm:col-span-6 xl:col-span-3">
+                            <div @class([
+                                'relative zoom-in',
+                                "before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']",
+                            ])>
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="UserPlus" />
+                                    </div>
+                                    <div class="mt-6 text-3xl font-medium leading-8">{{ $genderMale }}</div>
+                                    <div class="mt-1 text-base text-slate-500">Laki Laki</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 xl:col-span-3">
+                            <div @class([
+                                'relative zoom-in',
+                                "before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']",
+                            ])>
+                                <div class="box p-5">
+                                    <div class="flex">
+                                        <x-base.lucide class="h-[28px] w-[28px] text-primary" icon="UserMinus" />
+                                    </div>
+                                    <div class="mt-6 text-3xl font-medium leading-8">{{ $genderFemale }}</div>
                                     <div class="mt-1 text-base text-slate-500">
-                                        Unique Visitor
+                                        Perempuan
                                     </div>
                                 </div>
                             </div>
